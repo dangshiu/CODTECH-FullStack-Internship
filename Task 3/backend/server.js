@@ -13,7 +13,7 @@ const io = new Server(server, {
   cors: { origin: "*" }
 });
 
-mongoose.connect("mongodb://admin:Task3Pass123@ac-rsobvum-shard-00-00.zhmllfp.mongodb.net:27017,ac-rsobvum-shard-00-01.zhmllfp.mongodb.net:27017,ac-rsobvum-shard-00-02.zhmllfp.mongodb.net:27017/?ssl=true&replicaSet=atlas-y2iv2s-shard-0&authSource=admin&appName=Cluster0");
+mongoose.connect("MONGODB_CONNECTION_STRING");
 
 const DocSchema = new mongoose.Schema({
   content: String
